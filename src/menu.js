@@ -43,7 +43,13 @@ function createMenuItem(name, discription){
 
 
     return menuItem
-
-
-
 }
+
+function loadMenu(){
+    const main = document.getElementById("main")
+    main.textContent = ""
+
+    main.appendChild(createMenu());
+}
+
+export default loadMenu;
