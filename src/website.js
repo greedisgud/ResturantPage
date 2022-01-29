@@ -54,17 +54,18 @@ function createNav(){
     return nav
 }
 
-function setActiveButton(button){
+function setActiveButton(button) {
     const buttons = document.querySelectorAll(".button-nav");
-
+  
     buttons.forEach((button) => {
-        if (button !== this){
-            button.classList.remove("active")
-        }
+      if (button !== this) {
+        button.classList.remove("active");
+      }
     });
-
-    button.classList.add("active")
-}
+  
+    button.classList.add("active");
+  }
+  
 
 function createMain(){
     const main = document.createElement("main");
@@ -90,7 +91,7 @@ function loadWebsite(){
     content.appendChild(createMain());
     content.appendChild(createFooter());
 
-    setActiveButton(document.querySelector(".nav-button"));
+    setActiveButton(document.querySelector(".button-nav"));
     loadHome();
 }
 

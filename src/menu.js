@@ -32,7 +32,7 @@ function createMenuItem(name, discription){
     foodTitle.textContent = name;
 
     const foodDisc = document.createElement("p");
-    disc.textContent = discription;
+    foodDisc.textContent = discription;
 
     const foodImage = document.createElement("img");
     foodImage.src = `images/${name.toLowerCase()}.jpeg`

@@ -2,6 +2,7 @@ function createHome(){
     const home = document.createElement("div");
     home.classList.add("home");
 
+    const cookieImage =document.createElement("img");
     cookieImage.src = "images/Cookies.jpeg"
 
     home.appendChild(createPara("Mom's homemade cookies!"));
