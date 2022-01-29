@@ -82,3 +82,16 @@ function createFooter(){
 
     return footer;
 }
+
+function loadWebsite(){
+    const content = document.getElementById("content");
+
+    content.appendChild(createHeader());
+    content.appendChild(createMain());
+    content.appendChild(createFooter());
+
+    setActiveButton(document.querySelector(".nav-button"));
+    loadHome();
+}
+
+export default loadWebsite;
