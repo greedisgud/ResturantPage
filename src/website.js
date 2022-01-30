@@ -19,6 +19,7 @@ function createHeader(){
 
 function createNav(){
     const nav = document.createElement("nav");
+    nav.classList.add("nav-bar");
 
     const homeBtn = document.createElement("button");
     homeBtn.classList.add("button-nav");
